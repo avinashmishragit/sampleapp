@@ -14,14 +14,15 @@
 </head>
 <body>
 
-<div class"container">
+<div class="container">
 <header>
 <%=image_tag("logo.png",:alt=>"Same App",:class=>"round") %>
 <nav class="round">
 	<ul>
-	<li><%=link_to "Home",'#'%></li>	
-    <li><%=link_to "Help",'#'%></li>
+	<li><%=link_to "Home",root_path%></li>	
+    <li><%=link_to "Help",help_path%></li>
      <li><%=link_to "sign in",'#'%></li>
+     <li><%=link_to "Contact",contact_path %></li>
    <ul>
    </nav>
 </header>
