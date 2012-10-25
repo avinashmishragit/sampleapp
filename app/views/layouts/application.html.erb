@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>This is an smaple app|| <%=@title%></title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <title> <%= title %></title>
+
+ <%= javascript_include_tag "application" %>
+ <%= csrf_meta_tags %> 
+<![endif ]-->
+ <%=stylesheet_link_tag 'blueprint/screen',:media=>'screen' %>
+ <%= stylesheet_link_tag 'blueprint/print',:media=>'print' %><![endif ]-->
+
+
+
 </head>
 <body>
 
-<%= yield %>
+<div class"container">
+<header>
+<%=image_tag("logo.png",:alt=>"Same App",:class=>"round") %>
+<nav class="round">
+	<ul>
+	<li><%=link_to "Home",'#'%></li>	
+    <li><%=link_to "Help",'#'%></li>
+     <li><%=link_to "sign in",'#'%></li>
+   <ul>
+   </nav>
+</header>
+<sction class="round">
 
+<%= yield %>
+</section>
+
+</div>
 </body>
 </html>
