@@ -36,7 +36,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-source 'https://rubygems.org'
-gem 'bootstrap-sass', '2.0.4'
 
+gem 'bootstrap-sass', '2.0.4'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'gravatar_image_tag','0.1.0' 
 

@@ -1,1 +1,7 @@
-<%=@user.name%>   </br>      <%=@user.email%>
+<%=@user.name%>   </br>
+<%=@user.email%></br>
+<h3>Profile Image<h3/>
+<h1>	
+<%=gravatar_image_tag @user.email %>
+<%=@user.name %>
+</h1>	
